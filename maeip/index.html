@@ -160,6 +160,18 @@
     font-family:var(--mono);font-size:12.5px;line-height:1.6;color:var(--ink);
     min-height:72px;padding:0;
   }
+  .folder{
+    display:flex;align-items:center;justify-content:center;gap:7px;
+    margin-top:10px;
+    font-family:var(--sans);font-size:15px;font-weight:600;
+    color:var(--pine);text-decoration:none;
+    background:var(--pine-soft);
+    border:1px solid var(--pine);border-radius:10px;
+    padding:13px;
+  }
+  .folder:hover{background:#D9E7E1}
+  .folder:focus-visible{outline:2px solid var(--pine);outline-offset:2px}
+  .folder::before{content:"📁";font-size:15px}
   .note{
     font-size:12.5px;color:var(--muted);margin-top:14px;line-height:1.65;
   }
@@ -274,9 +286,13 @@
     <textarea id="line" readonly></textarea>
   </div>
 
+  <a class="folder" href="https://enablerai.sharepoint.com/:f:/s/msteams_6af320/IgC9qm8cEHuEQrpkXr-toOC_AZ8Yyy4_OBzglEzPURbE5iY" target="_blank" rel="noopener">
+    영수증 폴더 열기
+  </a>
+
   <p class="note">
     복사한 내용을 대화창에 붙여넣으면 노션 매입 DB에 등록됩니다.
-    영수증 원본은 사내 원드라이브 영수증 폴더에 올립니다.
+    이름이 바뀐 영수증 파일을 받아 위 폴더에 올리면 끝입니다.
   </p>
 
 </div>
